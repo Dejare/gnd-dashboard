@@ -45,6 +45,13 @@ header{
             margin-left: 0rem;
          }
     }
+    .nav{
+        .mobile{
+            @media (min-width: 1000px) {
+                display: none;
+            }
+        }
+    }
     .nav nav{
         ul{
             list-style-type: none;
@@ -64,6 +71,7 @@ header{
         @media (max-width: 900px) {
             display: none;
         }
+        
     }
 }
 a::after{
