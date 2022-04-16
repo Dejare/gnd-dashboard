@@ -58,7 +58,7 @@ const Home = () => {
       </div>
 
 
-<Text/>
+<Tex  t/>
 
       {/* PAGE BTNS */}
       <div className="pagebtn">
