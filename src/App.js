@@ -1,10 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Home from './components/Home';
+import Leftside  from './components/Leftside';
+import Rightside from './components/Rightside';
+import Center from './components/Center';
+
+
 
 function App() {
   return (
-   <Home/>
+   <>
+       <div className="mainComponent">
+ 
+ < Leftside />
+ < Center />
+ < Rightside />
+</div>
+<div className="responsive">Hii there, This is a dashboard and cannot be viewed on mobile devices. Please switch to a desktop to view this.</div> 
+   </>
   );
 }
 

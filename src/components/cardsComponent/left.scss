@@ -1,0 +1,81 @@
+.leftcard{
+    .bg{
+        width: 40px;
+        height: 40px;
+        background: #eaecf4;
+        border-radius: 10px;
+        margin: .5rem 1.3rem; 
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }.bg:hover{
+        transition: .2s ease-in-out;
+            background: #bbbcc0;
+            box-shadow: 1px 1px 2px #0000007a;
+        }
+    p{
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+        img{
+            width: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            fill: white;
+            color: white;
+            // padding: .6rem;
+        }
+}
+
+.mainLeft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.leftBanner{
+    margin: 2rem auto;
+    width: 80%;
+    height: 25vh;
+    color: #50449c;
+    background: #6769ee8f;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .001rem  .5rem #686aee;
+    img{
+        display: flex;
+        margin: 1rem auto 0rem auto;
+        width: 8rem;
+        align-items: center;
+    }
+    button{
+        display: flex;
+        background: white;
+        color: #50449c;
+        border-radius: 10px;
+        // padding: .5rem 1rem;
+        width: 95px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        margin: 1rem auto;
+        border: none;
+        // margin: 0rem .7rem;
+        
+    }
+}
+
+.headerr{
+    h1{
+        margin: 2rem;
+        background: linear-gradient(to top, #50449c, crimson);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}

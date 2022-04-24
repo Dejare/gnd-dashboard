@@ -1,0 +1,235 @@
+.paymentHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+
+.paymentHead h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.paymentHead button {
+  margin: 1rem;
+  background: white;
+  color: black;
+  width: 65px;
+  height: 40px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px #00000018;
+          box-shadow: 1px 1px 1px #00000018;
+  border: none;
+  border-radius: 10px;
+}
+
+.paymentmaincard {
+  border: none;
+  border-radius: 15px;
+  margin: 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 15vh;
+  background: white;
+  -webkit-box-shadow: 1.5px 1.5px 1.5px #00000018;
+          box-shadow: 1.5px 1.5px 1.5px #00000018;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.paymentmaincard .onee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.paymentmaincard .onee .leftitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.paymentmaincard .onee .leftitems p {
+  font-size: .9rem;
+  margin-top: 1rem;
+  letter-spacing: -.7px;
+  font-weight: bold;
+}
+
+.paymentmaincard .onee .leftitems img {
+  margin: .4rem;
+  margin-bottom: 1.12rem;
+  width: 2rem;
+}
+
+.paymentmaincard .onee .rightitem p {
+  -webkit-box-shadow: 1.5px 1.5px 1.5px #00000018;
+          box-shadow: 1.5px 1.5px 1.5px #00000018;
+  margin: .9rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.newTransfer button {
+  border: none;
+  border-radius: 10px;
+  background: #646363;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1.5px 1.5px 1.5px #00000018;
+          box-shadow: 1.5px 1.5px 1.5px #00000018;
+}
+
+.walletHeading {
+  margin: 1.5rem 2rem;
+}
+
+.walletHeading h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.date {
+  margin-left: 1rem;
+  font-size: .8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.totalWallet {
+  width: 95%;
+  height: 8vh;
+  margin: 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.totalWallet .sideImg img {
+  width: 3rem;
+  margin-left: 2rem;
+}
+
+.walletcard {
+  border: none;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #4d4d4d;
+}
+
+.walletcard .onee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.walletcard .onee .leftitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.walletcard .onee .leftitems p {
+  font-size: .9rem;
+  margin-top: 1rem;
+  letter-spacing: -.7px;
+  font-weight: bold;
+}
+
+.walletcard .onee .leftitems .abbrev {
+  font-size: 1.3rem;
+}
+
+.walletcard .onee .rightitem p {
+  margin-top: 1.2rem;
+  font-weight: bold;
+}
+
+.walletcard .twoo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.walletcard .twoo p {
+  margin: .9rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.walletcard .twoo .increase {
+  color: #4ae9c6;
+}
+/*# sourceMappingURL=Payment.css.map */
