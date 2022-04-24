@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+import '../App.scss'
 import account from '../images/account.png'
 import Walletmain from './cardsComponent/Walletmain'
 import Payment from './Payment'

@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import Leftside  from './components/Leftside';
 import Rightside from './components/Rightside';
 import Center from './components/Center';

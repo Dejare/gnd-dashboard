@@ -21,6 +21,9 @@ const Payment = () => {
             <div className="walletHeading">
                 <h1>Wallets</h1>
             </div>
+            <div className='newtransfer'>
+                
+            </div>
         </div>
     )
 }

@@ -1,13 +1,92 @@
+@font-face {
+  font-family: 'Calibre-Medium';
+  src: url("../font/Calibre-Medium.woff") format("woff"), url("../font/Calibre-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mark Pro';
+  src: url("../font/MarkPro-Heavy.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../font/CircularStd-Book.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibre-Regular';
+  src: url("../font/Calibre-Regular.woff") format("woff"), url("../font/Calibre-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*--------------------------
+    base settings
+---------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 82.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Tahoma', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-html, body {
-  max-width: 100%;
+  font-family: "Circular Std";
 }
 
 .mainComponent {
@@ -21,13 +100,13 @@ html, body {
 }
 
 .leftside {
-  width: 20%;
+  width: 15%;
   height: 100%;
   background: #f6f5fa;
 }
 
 .center {
-  width: 55%;
+  width: 60%;
   height: 100vh;
   background-color: white;
   position: relative;
@@ -47,7 +126,7 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #F6F5FA;
+  background: #f6f5fa;
   -webkit-box-shadow: 1px 1px 2px #3534477e;
           box-shadow: 1px 1px 2px #3534477e;
 }
@@ -58,13 +137,13 @@ html, body {
   display: flex;
   margin: 2rem auto;
   width: 70%;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   background: #f6f8fa;
   border: none;
   border-radius: 25px;
   outline: none;
-  -webkit-transition: .2s all;
-  transition: .2s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 .center #search:focus {
@@ -121,12 +200,14 @@ html, body {
   margin: 1rem;
 }
 
-.mainCard .dot1, .mainCard .dot2, .mainCard .dot3 {
+.mainCard .dot1,
+.mainCard .dot2,
+.mainCard .dot3 {
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background-color: black;
-  margin-top: .1rem;
+  margin-top: 0.1rem;
 }
 
 .mainCard .card {
@@ -145,7 +226,7 @@ html, body {
 }
 
 .mainCard .card .cryptoValues h4 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
@@ -187,7 +268,7 @@ html, body {
   height: 50px;
   background: #eaecf4;
   border-radius: 10px;
-  margin: .5rem 1.3rem;
+  margin: 0.5rem 1.3rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,7 +295,7 @@ html, body {
   background: transparent;
   fill: white;
   color: white;
-  padding: .6rem;
+  padding: 0.6rem;
 }
 
 .activityHeading {
@@ -258,7 +339,7 @@ html, body {
 
 button {
   margin-top: 3rem;
-  padding: .5rem .5rem;
+  padding: 0.5rem 0.5rem;
   height: 50px;
   width: 50px;
   background: #6769ee;
@@ -268,7 +349,7 @@ button {
 }
 
 .lacards {
-  margin: .5rem 3rem .25rem 3rem;
+  margin: 0.5rem 3rem 0.25rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +358,7 @@ button {
           flex: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .laImg {
@@ -300,7 +381,10 @@ button {
   width: 2rem;
 }
 
-.la-one, .la-two, .la-three, .la-four {
+.la-one,
+.la-two,
+.la-three,
+.la-four {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +395,10 @@ button {
   margin: 0rem 1rem 2rem 0.4rem;
 }
 
-.la-one p, .la-two p, .la-three p, .la-four p {
+.la-one p,
+.la-two p,
+.la-three p,
+.la-four p {
   font-size: 14px;
   color: #48465f;
 }
@@ -324,6 +411,8 @@ button {
   background: #cddaf5;
   z-index: 10;
   border-radius: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   display: none;
 }
 
@@ -352,7 +441,7 @@ button {
 }
 
 #dropDown .dropDownBg a {
-  margin: .5rem 0rem;
+  margin: 0.5rem 0rem;
   text-decoration: none;
   color: black;
   font-weight: lighter;

@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: 'Calibre-Medium';
+    src:url('../font/Calibre-Medium.woff') format('woff'),
+        url('../font/Calibre-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('../font/MarkPro-Heavy.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Circular Std";
+    src: url('../font/CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Calibre-Regular';
+    src:url('../font/Calibre-Regular.woff') format('woff'),
+            url('../font/Calibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+//fonts
+$primary-font: 'Calibre-Regular', sans-serif;
+$secondary-font: 'Calibre-SemiBold', sans-serif;
+$tertiary-font: 'Calibre-Medium', sans-serif;
+$stylefont: "Mark Pro";
+$circular: "Circular Std";
+
+//colors
+$primary-color: #09F755;
+$secondary-color: #797575;
+$white: #eeeeee;
+$black: #000000;
+$lightblue: #6bc5f8;
+$lightpurple: rgb(207, 89, 230);
+
+/*--------------------------
+    base settings
+---------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    // border: solid 2px red;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 82.5%; // 10px
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    
+    @media only screen and (max-width: 62.5em) { // tab-land
+        font-size: 56.25%;
+    }
+    
+    @media only screen and (max-width: 56.25em) { // tab-port
+        font-size: 54%; 
+    }
+
+    @media only screen and (max-width: 37.5em) { // phone
+        font-size: 51%; 
+    }
+    
+    @media only screen and (min-width: 112.5em) { // big desktop
+        font-size: 75%; // 1rem = 12px, 12/16 = 75
+    }
+    
+}
+.bold{
+    font-weight: 600;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+import '../App.scss'
 import Maincard from './cardsComponent/Maincard'
 import settings from '../images/settings.svg'
 // import eth from '../images/eth.png'
@@ -18,7 +18,7 @@ const Center = () => {
             </div>
             < Maincard /> 
             <div className="activityHeading">
-                <div className="aText"><h1>Latest Activities</h1>
+                <div className="aText bold"><h1>Latest Activities</h1>
             <p>Updated 12 minutes ago</p>
             </div>
             <div className="totalBg">

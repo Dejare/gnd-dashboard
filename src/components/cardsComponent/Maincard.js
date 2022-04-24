@@ -1,10 +1,10 @@
-import '../../App.css'
+import '../../App.scss'
 import Centercard from './Centercard'
 import React from 'react'
 import eth from '../../images/eth.png';
 import btc from '../../images/btc.png'
 import ltc from '../../images/ltc.png'
-
+import {FaBitcoin} from 'react-icons/fa'
 const Maincard = () => {
     return (
         <div className='mainCard'>

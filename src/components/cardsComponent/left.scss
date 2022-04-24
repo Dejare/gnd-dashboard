@@ -16,8 +16,8 @@
         }
     p{
         text-align: center;
-        font-size: 0.75rem;
-        font-weight: 600;
+        // font-size: 0.75rem;
+        // font-weight: 600;
     }
         img{
             width: 2.5rem;
@@ -33,9 +33,12 @@
 
 .mainLeft{
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2rem;
+    // padding: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
 }
 .leftBanner{
     margin: 2rem auto;

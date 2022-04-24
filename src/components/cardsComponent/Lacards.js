@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../App.css'
+import '../../App.scss'
 const Lacards = ({imgSrc, laone, laonep, latwo, latwop, lathree, lathreep, lafour, lafourp,imgBg}) => {
     return (
         <div className="lacards">

@@ -11,13 +11,14 @@ import account from '../../images/account.png'
 import currencies from '../../images/currencies.png'
 import electricity from '../../images/electricity.png'
 import security from '../../images/security.svg'
-import dashboard from '../../images/dashboard.png'
+import dashboard from '../../images/dashboard.png';
+import { RiDashboardFill } from 'react-icons/ri'
 
 
 const Mainleft = () => {
     return (
         <div className="mainLeft">
-            <Leftcards text = "Dashboard"  imgSrc={dashboard}/>
+            <Leftcards text = "Dashboard"  imgSrc={<RiDashboardFill />}/>
             <Leftcards  text = "Calculator"  imgSrc={calculator} />
             <Leftcards  text = "Wallets" imgSrc={wallets} />
             <Leftcards  text = "Savings" imgSrc={savings} />
