@@ -34,7 +34,7 @@ const Center = () => {
             <div className="bg">
                 <img src = {settings} onClick={handleClick}/>
                 </div>
-               <div  className="aBtn">
+               <div  className="abtn">
                <button>+</button>
             </div>
             </div>

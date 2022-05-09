@@ -168,6 +168,10 @@ body {
         flex: 2;
         flex-direction: row;
         justify-content: space-evenly;
+        @media screen and (max-width: 800px) {
+            // width: 100%;
+            display: none;
+        }
         p {
             color: #353447;
         }
@@ -184,6 +188,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 800px) {
+        width: 25px;
+        height: 25px;
+        border-radius: 4px;
+    }
     img {
         width: 3rem;
         display: flex;
@@ -223,6 +232,15 @@ button {
     border: none;
     border-radius: 10px;
     color: $white;
+}
+.abtn{
+    button{
+    @media screen and (max-width: 800px) {
+        width: 25px;
+        height: 25px;
+        border-radius: ;
+    }
+}
 }
 // latest activity cards styling
 
