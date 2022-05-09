@@ -101,7 +101,6 @@ body {
     @media screen and (max-width: 800px) {
         white-space: nowrap;
         overflow-x: scroll;
-        position: absolute;
     }
     .heading {
         display: flex;
@@ -128,6 +127,7 @@ body {
         margin: 0 1rem;
        @media screen and (max-width: 800px) {
            width: 80%;
+           height: 100%;
        }
         .cryptoValue {
             position: relative;
