@@ -30,12 +30,12 @@
     border: 1px solid rgba(38, 184, 204, 0.3);
     @media screen and (max-width: 780px) {
         width: 75vw;
-        height: 20vh;
+        height: 21.6vh;
         margin: auto;
     }
 }
 .creditcardbottomright{
-    margin-top: 5rem;
+    // margin-top: 5rem;
     position: absolute;
     bottom: 0;
 
@@ -45,16 +45,26 @@
         background: white;
         border-radius: 50%;
         background-color: #f75f4b;
+        @media screen and (max-width: 800px) {
+            width: 20px;
+            height: 20px;
+        }
     }
     .secondCircle{
         border-left: 2px solid rgb(252, 249, 249);
         margin-left: -1.6rem;
         background-color: #f5cb11;
+        @media screen and (max-width: 800px) {
+            margin-left: -.6rem;
+        }
     }
 }
 .cardNum{
     letter-spacing: 7px;
     text-align: center;
+    @media screen and (max-width: 800px) {
+        letter-spacing: 3.7px;
+    }
     h2{
         // margin-bottom: 5rem !important ;
     }
@@ -65,6 +75,8 @@ p{
 .creditcardbottomleft{
     position: absolute;
     right: 0;
+    bottom: 0;
+    color: white;
 }
 .transactions{
     @media screen and (max-width: 780px) {

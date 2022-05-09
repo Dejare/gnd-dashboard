@@ -4,6 +4,7 @@ import {
     BsArrowBarLeft,
     BsArrowLeftSquareFill,
 } from "react-icons/bs";
+import './cards.scss';
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 const Creditcard = ({CardNum, CardDate}) => {
@@ -27,17 +28,17 @@ const Creditcard = ({CardNum, CardDate}) => {
             <div className="text-white m-8">
                 <BsArrowLeftSquareFill />
             </div>
-            <div className="cardNum text-3xl text-white m-2">
+            <div className="cardNum text-3xl text-white m-2 sm:m-8">
                 <h2 ref={cardNum}>{CardNum}</h2>
                 <p className="text-sm">
                     Valid Thru <span className="ml-4 text-xl" ref={cardDate}>{CardDate}</span>
                 </p>
             </div>
-            <div className="creditcardbottomright flex flex-row  m-8">
+            <div className="creditcardbottomright flex flex-row m-4">
                 <div></div>
                 <div className="secondCircle"></div>
             </div>
-            <div className="creditcardbottomleft  m-8">
+            <div className="creditcardbottomleft  m-4">
                 <div>
                 {
                   Visible ? <AiOutlineEye onClick={()=>{
