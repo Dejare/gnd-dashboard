@@ -2,6 +2,9 @@
 .main{
     width: 85%;
     position: relative;
+    @media screen and (max-width: 780px) {
+        width: 100%;
+    }
     .functionBtns{
         position: absolute;
         right: 0;
@@ -9,6 +12,14 @@
         top: 50%;
         // bottom: 50%;
         transform: translateY(-50%);
+        @media screen and (max-width: 780px) {
+            position: relative;
+            width: 80vw;
+            flex-direction: row;
+            margin: auto;
+            margin-top: 5rem;
+
+        }
     }
 }
 .mainard{
@@ -17,6 +28,11 @@
     box-shadow: 0 4px 30px rgba($color: #000000, $alpha: 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(38, 184, 204, 0.3);
+    @media screen and (max-width: 780px) {
+        width: 75vw;
+        height: 20vh;
+        margin: auto;
+    }
 }
 .creditcardbottomright{
     margin-top: 5rem;
@@ -49,4 +65,9 @@ p{
 .creditcardbottomleft{
     position: absolute;
     right: 0;
+}
+.transactions{
+    @media screen and (max-width: 780px) {
+        margin: auto;
+    }
 }

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './cards.scss'
 const Transactions = ({text}) => {
   return (
-    <div className='w-3/4 m-12 flex flex-row justify-between bg-gray-300 p-8 rounded-xl'>
+    <div className=' transactions w-3/4 m-12 flex flex-row justify-between bg-gray-300 p-8 rounded-xl'>
        <div className="transactiontop flex flex-col">
          <h2 className='text-2xl'>Deposits</h2>
          <p>Card Deposits</p>

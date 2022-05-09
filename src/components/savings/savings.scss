@@ -1,6 +1,9 @@
 @import "../../style/_base.scss";
 .savings_main{
     width: 85%;
+    @media screen and (max-width: 780px) {
+        width: 100%;
+    }
     h1{
         font-size: 2rem;
         font-weight: 400;
@@ -22,13 +25,23 @@
         }
     }
 }
-
+.savingBox{
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
 .savingCardBottom{
     position: relative;
     // background: #86dceb;
     width: 50%;
     height: 35vh;
     margin: 2rem;
+    @media screen and (max-width: 780px) {
+        width: 80vw;
+        height: 20vh;;
+        margin: 2rem auto;
+    }
 }
 .content{
     h1{

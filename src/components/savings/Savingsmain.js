@@ -40,7 +40,7 @@ const Savingsmain = () => {
                     We've saved <span>$1200</span> <br /> Since you last checked
                 </h1>
             </div>
-            <div className="flex flex-row justify-around m-auto">
+            <div className="savingBox flex flex-row justify-around m-auto">
         <Savingcardtwo bg="#86dceb"  text="1200" target="Rent"/>
         <Savingcardtwo bg="#ffc0f4"   text="200" target="College Dues" num="2"/>
 
