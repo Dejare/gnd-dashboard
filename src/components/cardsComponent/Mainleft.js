@@ -1,6 +1,6 @@
 import React from 'react'
 import Leftcards from './Leftcards'
-import './left.css'
+import './left.scss'
 import flower from '../../images/flower.png'
 import calculator from '../../images/calculator.png'
 import wallets from '../../images/wallets.png'
@@ -12,27 +12,40 @@ import currencies from '../../images/currencies.png'
 import electricity from '../../images/electricity.png'
 import security from '../../images/security.svg'
 import dashboard from '../../images/dashboard.png';
-import { RiDashboardFill } from 'react-icons/ri'
-
+// import { RiDashboardFill } from 'react-icons/ri'
+import {useHistory} from 'react-router-dom'
 
 const Mainleft = () => {
+    const history = useHistory()
+
+    function SavingsPage() {
+        history.push("/savings")
+        // alert ("clicked")
+    }
+    function dashboardHome() {
+        history.push("/")
+    }
+    function cardsHome() {
+        history.push("/cards")
+    }
     return (
         <div className="mainLeft">
-            <Leftcards text = "Dashboard"  imgSrc={<RiDashboardFill />}/>
+            <div className="cardsLeft">
+            <Leftcards text = "Dashboard"  imgSrc={ dashboard} func={dashboardHome}/>
             <Leftcards  text = "Calculator"  imgSrc={calculator} />
-            <Leftcards  text = "Wallets" imgSrc={wallets} />
-            <Leftcards  text = "Savings" imgSrc={savings} />
+            <Leftcards  text = "Cards" imgSrc={wallets} func={cardsHome}/>
+            <Leftcards  text = "Savings" imgSrc={savings} func={SavingsPage}/>
             <Leftcards  text = "Currencies" imgSrc={currencies} />
             <Leftcards text = "Security" imgSrc={security}  />
             <Leftcards text = "Upcoming" imgSrc={electricity} />
             <Leftcards text = "Food" imgSrc={food} />
             <Leftcards text = "Health" imgSrc={health} />
             <Leftcards text = "Account" imgSrc={account} />
-
+            </div>
 
             <div className="leftBanner">
             < img src = {flower} alt = "GO PRO"/>
-            <button>Go Pro</button>
+            <button className='mb-5'>Go Pro</button>
             </div> 
         </div>
     )

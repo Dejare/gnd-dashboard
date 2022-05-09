@@ -27,7 +27,7 @@
     display: flex;
     width: 80%;
     height: 15vh;
-    background: white;
+    background: white !important;
     box-shadow: 1.5px 1.5px 1.5px #00000018;
     display: flex;
     flex-direction: column;
@@ -108,6 +108,7 @@ align-items: flex-start;
     }
 }
 .walletcard{
+    background: #000;
     border: none;
     border-radius: 15px;
     display: flex;
@@ -155,4 +156,9 @@ align-items: flex-start;
             color: #4ae9c6;
         }
     }
+}
+.noPayment{
+    text-align: center;
+    margin: 2rem auto;
+    font-weight: 700;
 }

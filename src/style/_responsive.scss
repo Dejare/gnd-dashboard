@@ -1,0 +1,8 @@
+// RESPONSIVENESS FOR TABS
+
+    .mainComponent {
+        @media only screen and (max-width: 800px) { // tab-land
+        display: none;
+        flex-direction: column;
+    }
+    }

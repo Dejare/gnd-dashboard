@@ -6,6 +6,7 @@ import Mainleft from './cardsComponent/Mainleft'
 const Leftside = () => {
     return (
         <div className= "leftside">
+     
             <div className="headerr">
            <h1>GND CRYPTO</h1> 
            </div>

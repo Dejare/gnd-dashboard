@@ -1,3 +1,11 @@
+@import '../../style/_base.scss';
+.btnLeft{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .leftcard{
     .bg{
         width: 40px;
@@ -34,22 +42,37 @@
 .mainLeft{
     display: flex;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     // padding: 2rem;
     justify-content: center;
     margin: 2rem auto;
+    @media screen and (max-width: 800px) {
+        
+    }
+    .cardsLeft{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
 }
 .leftBanner{
     margin: 2rem auto;
     width: 80%;
     height: 25vh;
     color: #50449c;
-    background: #6769ee8f;
+    // background: #6769ee8f;
+    background: linear-gradient(-45deg, $lightblue, $lightpurple);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     box-shadow: .001rem  .5rem #686aee;
+    @media screen and (max-width: 800px) {
+        width: 30%;
+        height: 100%;
+    }
     img{
         display: flex;
         margin: 1rem auto 0rem auto;

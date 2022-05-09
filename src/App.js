@@ -1,23 +1,33 @@
-
-import './App.scss';
-import Leftside  from './components/Leftside';
-import Rightside from './components/Rightside';
-import Center from './components/Center';
-
-
+import "./App.scss";
+import Home from "./Home";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Rightside from "./components/Rightside";
+import Center from "./components/Center";
+import Leftside from "./components/Leftside";
+import Saving from "./components/savings/Saving";
+import Error from "./Error";
+import Card from "./components/cards/Card";
 
 function App() {
-  return (
-   <>
-       <div className="mainComponent">
- 
- < Leftside />
- < Center />
- < Rightside />
-</div>
-<div className="responsive">Hii there, This is a dashboard and cannot be viewed on mobile devices. Please switch to a desktop to view this.</div> 
-   </>
-  );
+    return (
+        <Router>
+         {/* <Home/> */}
+            <Switch>
+            <Route exact path="/">
+                    <Home/>
+                </Route>
+                <Route path="/savings">
+                    <Saving/>
+                </Route>
+                <Route path="/cards" exact>
+                    <Card/>
+                </Route>
+                <Route path="*">
+                    <   Error/>
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;

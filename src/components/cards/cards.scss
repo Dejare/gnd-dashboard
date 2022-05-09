@@ -1,0 +1,52 @@
+@import '../../style/_base.scss';
+.main{
+    width: 85%;
+    position: relative;
+    .functionBtns{
+        position: absolute;
+        right: 0;
+        margin-right: 5rem;
+        top: 50%;
+        // bottom: 50%;
+        transform: translateY(-50%);
+    }
+}
+.mainard{
+    margin-left: 13rem;
+    background: linear-gradient(-45deg, $lightblue, $lightpurple);
+    box-shadow: 0 4px 30px rgba($color: #000000, $alpha: 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(38, 184, 204, 0.3);
+}
+.creditcardbottomright{
+    margin-top: 5rem;
+    position: absolute;
+    bottom: 0;
+
+    div{
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        background-color: #f75f4b;
+    }
+    .secondCircle{
+        border-left: 2px solid rgb(252, 249, 249);
+        margin-left: -1.6rem;
+        background-color: #f5cb11;
+    }
+}
+.cardNum{
+    letter-spacing: 7px;
+    text-align: center;
+    h2{
+        // margin-bottom: 5rem !important ;
+    }
+p{
+    letter-spacing: 0px;
+}
+}
+.creditcardbottomleft{
+    position: absolute;
+    right: 0;
+}

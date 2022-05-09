@@ -1,0 +1,63 @@
+@import "../../style/_base.scss";
+.savings_main{
+    width: 85%;
+    h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .functionBtns{
+      width: 90%;
+      justify-content: center;
+    }
+    .text{
+        margin: 2rem;
+        text-align: left;
+        h1{
+            font-size: 2rem;
+            font-weight: 400;
+            span{
+                color: $lightpurple;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.savingCardBottom{
+    position: relative;
+    // background: #86dceb;
+    width: 50%;
+    height: 35vh;
+    margin: 2rem;
+}
+.content{
+    h1{
+        font-size: 4rem;
+    }
+}
+progress{
+    width: 50%;
+    counter-increment: +3;
+}
+progress::-webkit-progress-bar{
+    background-color: $white;
+
+}
+progress::-webkit-progress-value{
+
+    background-color: $black;
+    // height: 30px;
+}
+
+.progress, .fill{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 5%;
+    border-radius: 50%;
+    background: white;
+}
+.fill, .mask{
+    background: black;
+    // clip: rect(0px, 75px, 150px, 0px);
+}
