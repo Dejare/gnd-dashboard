@@ -41,6 +41,7 @@ const Payment = () => {
         setCardValues((prevData) => {
             return [...prevData, data];
         });
+        setPayment(CardValues.bool)
     };
     function removePayments() {
         localStorage.removeItem("datas")

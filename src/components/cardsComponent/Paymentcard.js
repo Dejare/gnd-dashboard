@@ -26,9 +26,6 @@ const Paymentcard = ({ recieve, imgSrc, amount, date, imgg }) => {
         // </div>
 
         <div className="paymentCard flex flex-column justify-around w-3/4 m-auto p-3 bg-white m-auto my-4 p-8 rounded-lg shadow">
-        <div className="sideImg m-auto mx-0">
-            <img src={imgSrc} alt="" width="30px" />
-        </div>
         <div className="paymentCardTop justify-between m-auto mx-0">
             <div className="paymentCardTopLeft">
                 <p className="abbrev mb-4">Sent {recieve}</p>

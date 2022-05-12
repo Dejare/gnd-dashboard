@@ -21,6 +21,7 @@ export const Newtransfer = (props) => {
             amount: Amount,
             wallet: Wallet,
             coin: Coin,
+            bool: true
         };
 
         props.onAddData(data);
