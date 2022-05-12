@@ -1,11 +1,5 @@
 .newtransfer{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50vw;
-    height: 60vh;
-    background: #fff;
+    position: inherit;
     .heading{
     text-align: center;
     h1{
@@ -15,7 +9,7 @@
     form{
         display: flex;
         flex-direction: column;
-        padding: 1rem 6rem;
+        padding: 1rem 4rem;
         input, select{
             // flex-direction: column;
             margin: 1rem 0rem;
@@ -73,6 +67,7 @@
     }
 }
 .sent{
+    position: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;

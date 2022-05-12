@@ -7,7 +7,7 @@ const Lacards = ({imgSrc, laone, laonep, latwo, latwop, lathree, lathreep, lafou
                 <img src = {imgSrc} />
             </div>
             <div className="la-one">
-                <h4>{laone}</h4>
+                <h4 >{laone}</h4>
                 <p>{laonep}</p>
             </div>
             <div className="la-two">

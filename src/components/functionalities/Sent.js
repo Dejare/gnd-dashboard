@@ -9,7 +9,8 @@ const Sent = ({amount, coin, walleto}) => {
    const history = useHistory()
 
    function home() {
-       history.push("/s")
+    //    history.push("/s")
+    container.current.style.display = "none"
    }
     // animation
 const container = useRef()
@@ -26,7 +27,7 @@ const container = useRef()
 
     return (
         <div className="sent">
-            <div className="newtransfer absolute bg-gray-600 h-4 w-4/4" ref={container}>
+            <div className="newtransfer" ref={container}>
                 <div className="heading">
                     <h1 className="bold">Sinzu!!</h1>
                 </div>
@@ -37,7 +38,7 @@ const container = useRef()
                     <p>You have successfully sent {amount}{coin} to {walleto}</p>
                 </div>
                 <div className="sentBtn">
-                <button className="bg-blue-5s00 sentBtn" onClick={home}>Return Home</button>
+                <button className="bg-blue-5s00 sentBtn" onClick={home}>Return</button>
                 
                 </div>
             </div>

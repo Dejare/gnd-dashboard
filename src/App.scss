@@ -145,7 +145,7 @@ body {
     }
 }
 .card:hover{
-          transform: scale(1.05);  
+        //   transform: scale(1.);  
 }
 .img {
     img {
@@ -157,7 +157,7 @@ body {
 
 .rightside {
     width: 25%;
-    height: 100%;
+    min-height: 100vh;
     background: $right;
     @media screen and (max-width: 800px) {
         width: 100%;
@@ -273,6 +273,9 @@ button {
     p {
         font-size: 14px;
         color: #48465f;
+        @media screen and (max-width: 800px){
+            font-size: 1rem;
+        }
     }
 }
 

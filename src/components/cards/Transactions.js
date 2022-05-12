@@ -8,7 +8,7 @@ const Transactions = ({text}) => {
          <p>Card Deposits</p>
        </div>
        <div className="transactionbottom mr-12">
-         <h2 className="text-green-600 text-2xl">+300</h2>
+         <h2 className="heading-3 text-2xl">+300</h2>
          <p>2/4/22</p>
        </div>
     </div>

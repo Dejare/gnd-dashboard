@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src\\components\\cards"
+		},
+		{
+			"path": "src\\components\\savings"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"type": "pwa-chrome",
+				"name": "http://localhost:3000/savings",
+				"request": "launch",
+				"url": "http://localhost:3000/savings"
+			}
+		]
+	}
+}

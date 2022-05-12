@@ -2,7 +2,7 @@ import React from "react";
 import "../../components/Payment.scss";
 const Paymentcard = ({ recieve, imgSrc, amount, date, imgg }) => {
     const today = new Date();
-    console.log(today);
+    // console.log(today);
   const year =  today.getFullYear();
   const month =   today.getMonth() + 1;
   const day=  today.getDate();
