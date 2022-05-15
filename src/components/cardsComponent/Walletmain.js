@@ -10,7 +10,10 @@ const Walletmain = () => {
 const apiKey = "bd9aa8a7e087001528a4349bbf18b357bca0e261";
 
     useEffect(() => {
-        fetch( `https://api.nomics.com/v1/currencies/ticker?key=${apiKey}&ids=BTC,ETH,LTC,DAI&interval=1d&convert=USD&per-page=100&page=1`, {mode: "no-cors"})
+        fetch( `https://api.nomics.com/v1/currencies/ticker?key=${apiKey}&ids=BTC,ETH,LTC,DAI&interval=1d&convert=USD&per-page=100&page=1`, {headers: {
+            'Content-Type': 'application/json',
+            "Access-Control-Allow-Origin": "*"            
+        }})
         .then(res=> res.json())
         .then(answer=> {
             console.log(answer);
