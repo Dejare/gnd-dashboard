@@ -8,7 +8,7 @@ const SavingCards = ({img, text}) => {
         <div className='text-xl'>
         {img}
         </div>
-        <p className='mt-4'>{text}</p>
+        <p className='mt-4 text-center'>{text}</p>
     </div>
   )
 }

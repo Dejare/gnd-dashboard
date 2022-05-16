@@ -12,8 +12,8 @@ const Creditcard = ({CardNum, CardDate}) => {
   const cardNum = useRef()
   const cardDate = useRef()
     return (
-        <div className="mainard w-2/4 h-80 bg-blue-400 rounded-3xl shadow m-12 relative">
-            <div className="creditcardtopright text-xl m-8 text-white flex flex-row justify-between ">
+        <div className="mainard md:w-2/4 w-3/4 h-80 bg-blue-400 rounded-3xl shadow m-12 relative">
+            <div className="creditcardtopright md:text-xl m-8 text-white flex flex-row justify-between ">
                 <div>
                     <h2>
                         GND <br /> Crypto
@@ -25,10 +25,10 @@ const Creditcard = ({CardNum, CardDate}) => {
                     </h2>
                 </div>
             </div>
-            <div className="text-white m-8">
+            <div className="text-white md:m-8 m-2 ml-8">
                 <BsArrowLeftSquareFill />
             </div>
-            <div className="cardNum text-3xl text-white m-2 sm:m-8">
+            <div className="cardNum text-xl md:text-3xl text-white md:m-2 sm:m-8">
                 <h2 ref={cardNum}>{CardNum}</h2>
                 <p className="text-sm">
                     Valid Thru <span className="ml-4 text-xl" ref={cardDate}>{CardDate}</span>

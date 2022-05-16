@@ -10,7 +10,6 @@ import { list } from "postcss";
 
 const Payment = () => {
 
-
         // GETTING THE DATA
         const getItems = () => {
             const localList = localStorage.getItem("datas");
@@ -24,13 +23,16 @@ const Payment = () => {
         };
 
         localStorage.setItem("itemm", true)
+        localStorage.setItem("payment", false)
+        const mypayment = localStorage.getItem("payment");
         const itemm = localStorage.getItem("itemm")
+        const myypayment = JSON.parse(mypayment)
 
     const [New, setNew] = useState(false);
     const [payment, setPayment] = useState(true);
     function handleClick() {
         setNew(!New);
-        setPayment(itemm)
+        setPayment(myypayment)
 
     }
     const [CardValues, setCardValues] = useState(getItems());
@@ -41,7 +43,6 @@ const Payment = () => {
         setCardValues((prevData) => {
             return [...prevData, data];
         });
-        setPayment(CardValues.bool)
     };
     function removePayments() {
         localStorage.removeItem("datas")
@@ -63,6 +64,7 @@ const Payment = () => {
                 <button onClick={removePayments}>Clear</button>
             </div>
             {CardValues.map((card) => {
+                // setPayment(false)
                 return (
                     <Paymentcard
                         key={card.id}

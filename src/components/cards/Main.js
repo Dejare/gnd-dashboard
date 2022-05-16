@@ -40,7 +40,7 @@ const Main = () => {
             }/{Math.floor(Math.random()*90)} */}
 
             {/* <Creditcard CardNum="0123456789101112919082" CardDate="03/26"/> */}
-            <h1 className="m-12 text-3xl">Card Transactions.</h1>
+            <h1 className="m-12 mt-20 md:mt-12 text-3xl">Card Transactions.</h1>
             <Transactions/>
         </div>
     );

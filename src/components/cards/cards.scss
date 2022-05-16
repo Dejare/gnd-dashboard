@@ -1,7 +1,7 @@
 @import '../../style/_base.scss';
 .main{
     width: 85%;
-    height: calc(100vh + 100%);
+    min-height: 100vh;
     position: relative;
     @media screen and (max-width: 780px) {
         width: 100%;
