@@ -30,7 +30,7 @@ export const Newtransfer = (props) => {
     };
     //
     function hide() {
-        
+
     }
 
     //END
@@ -60,7 +60,7 @@ export const Newtransfer = (props) => {
                 </div>
                 <form className="form" onSubmit={handleSubmit}>
                     <input
-                    required
+                        required
                         type="number"
                         name="amount"
                         className="input"
@@ -72,7 +72,7 @@ export const Newtransfer = (props) => {
                     {/* <input type="text" name="text" className="input" placeholder="Coin"/> */}
 
                     <input
-                    required
+                        required
                         type="text"
                         name="wallet"
                         className="input"

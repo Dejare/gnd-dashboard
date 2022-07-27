@@ -1,41 +1,41 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../../src/components/Payment.scss";
 import Paymentcard from "./cardsComponent/Paymentcard";
-import tetherUSD from "../../src/images/tetherUSD.svg";
-import righteth from "../../src/images/righteth.svg";
 import { Newtransfer } from "./functionalities/Newtransfer";
-import pay from "../db/pay.json";
-import List from "./functionalities/List";
-import { list } from "postcss";
+
 
 const Payment = () => {
 
-        // GETTING THE DATA
-        const getItems = () => {
-            const localList = localStorage.getItem("datas");
-            console.log(localList);
-            if (localList) {
-                return JSON.parse(localStorage.getItem("datas"))
-            }
-            else{
-                return [];
-            }
-        };
+    // GETTING THE DATA
+    const getItems = () => {
+        const localList = localStorage.getItem("datas");
+        console.log(localList);
+        if (localList) {
+            return JSON.parse(localStorage.getItem("datas"))
+        }
+        else {
+            return [];
+        }
+    };
 
-        localStorage.setItem("itemm", true)
-        localStorage.setItem("payment", false)
-        const mypayment = localStorage.getItem("payment");
-        const itemm = localStorage.getItem("itemm")
-        const myypayment = JSON.parse(mypayment)
 
+    // localStorage
+    localStorage.setItem("itemm", true)
+    localStorage.setItem("payment", false)
+    const mypayment = localStorage.getItem("payment");
+    const myypayment = JSON.parse(mypayment)
+
+    // state
     const [New, setNew] = useState(false);
     const [payment, setPayment] = useState(true);
+    const [CardValues, setCardValues] = useState(getItems());
+
+    // functions
     function handleClick() {
         setNew(!New);
         setPayment(myypayment)
 
     }
-    const [CardValues, setCardValues] = useState(getItems());
 
     const addData = function (data) {
         console.log(data);
@@ -44,6 +44,7 @@ const Payment = () => {
             return [...prevData, data];
         });
     };
+
     function removePayments() {
         localStorage.removeItem("datas")
         window.location.reload()
@@ -53,9 +54,7 @@ const Payment = () => {
     useEffect(() => {
         localStorage.setItem("datas", JSON.stringify(CardValues));
     }, [CardValues]);
-    // if (CardValues[0].id === null) {
-    //     setPayment(true)
-    // }
+
 
     return (
         <div className="payment">
@@ -75,7 +74,7 @@ const Payment = () => {
             })}
 
             {/* <List data={CardValues} /> */}
-          
+
             {payment ? (
                 <div className="noPayment">
                     YOU HAVE NO PAYMENT YET <br /> Click New Transfer To Pay
@@ -85,7 +84,7 @@ const Payment = () => {
 
             <div className="newTransfer">
                 <button onClick={handleClick}>+ New Transfer</button>
-                
+
             </div>
             {New ? <Newtransfer onAddData={addData} /> : null}
 

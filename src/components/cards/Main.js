@@ -1,11 +1,8 @@
-import React, {useState} from "react";
+// import { useState } from "react";
 import "./cards.scss";
 import SavingCards from "../savings/SavingCards";
 import {
-    AiOutlineArrowLeft,
-    Aifi,
     AiFillDollarCircle,
-    AiOutlineArrowsAlt,
     AiOutlinePlusSquare,
 } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
@@ -13,8 +10,8 @@ import Creditcard from "./Creditcard";
 import Transactions from "./Transactions";
 
 const Main = () => {
-    const [Deposits, setDeposits] = useState(false)
-    const [Withdrawal, setWithdrawal] = useState(false)
+    // const [Deposits, setDeposits] = useState(false)
+    // const [Withdrawal, setWithdrawal] = useState(false)
     return (
         <div className="main">
             <div className="flex flex-row justify-between">
@@ -26,11 +23,11 @@ const Main = () => {
                 </div>
             </div>
             <div className="functionBtns flex flex-col item-center h-100 m-auto  item-center justify-center bg-gray-100 rounded-xl shadow">
-                <SavingCards text="Add Card" img={<AiOutlinePlusSquare />}/>
+                <SavingCards text="Add Card" img={<AiOutlinePlusSquare />} />
                 <SavingCards text="Get New Card" img={<AiFillDollarCircle />} />
                 <SavingCards text="Stop Card" img={<FaTimes />} />
             </div>
-            <Creditcard CardNum="0123456789101112919082" CardDate="03/26"/>
+            <Creditcard CardNum="0123456789101112919082" CardDate="03/26" />
             {/* {
                 Math.floor(Math.random()*10e19+1)
             }
@@ -41,7 +38,7 @@ const Main = () => {
 
             {/* <Creditcard CardNum="0123456789101112919082" CardDate="03/26"/> */}
             <h1 className="m-12 mt-20 md:mt-12 text-3xl">Card Transactions.</h1>
-            <Transactions/>
+            <Transactions />
         </div>
     );
 };

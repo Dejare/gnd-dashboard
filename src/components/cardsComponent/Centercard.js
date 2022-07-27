@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useRef, useState } from "react";
 import "../../App.scss";
 import { GoKebabVertical } from "react-icons/go";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import gsap from "gsap";
 
 function Centercard({
     cryptoAsset,
@@ -11,15 +13,20 @@ function Centercard({
     cryptoAssetValueUSD,
     alt,
 }) {
+
+    // refs
     const dropdown = useRef();
     const balance = useRef();
     const balanceCrypto = useRef();
-    const [showBal, setshowBal] = useState(false);
 
+    // states
+    const [showBal, setshowBal] = useState(false);
     const [Balance, setBalance] = useState(false);
 
+    // functions
     function showDropdown() {
         dropdown.current.style.display = "block";
+        gsap.fromTo(dropdown.current, { opacity: 0, y: -100 }, { opacity: 1, y: 0, duration: .2 })
     }
     function closeDropdown() {
         dropdown.current.style.display = "none";
@@ -36,6 +43,9 @@ function Centercard({
         setBalance(false);
         setshowBal(false);
     }
+    // animations
+
+    // components
 
     return (
         <div className="card" style={{ backgroundColor: `${bg}` }}>
@@ -45,8 +55,8 @@ function Centercard({
                     <GoKebabVertical onClick={showDropdown} />
                 </div>
             </div>
-            <div className="img">
-                <img src={imgSrc} alt={alt} />
+            <div className="text-8xl text-gray-700 ml-3">
+                {imgSrc}
             </div>
             <div
                 id="dropDown"
@@ -57,11 +67,11 @@ function Centercard({
                     &times;
                 </div>
                 <div className="dropDownBg" onClick={closeDropdown}>
-                    <a href="#">
+                    <a href="">
                         <p>Send</p>
                     </a>
                     <a href="#">
-                        {" "}
+
                         <p>Recieve</p>
                     </a>
                     {Balance ? (
