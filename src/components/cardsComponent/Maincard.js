@@ -1,6 +1,5 @@
 import '../../App.scss'
 import Centercard from './Centercard'
-import { FaBitcoin, FaEthereum } from 'react-icons/fa';
 import { SiLitecoin, SiEthereum, SiBitcoin } from 'react-icons/si'
 const Maincard = () => {
     return (

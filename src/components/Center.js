@@ -7,6 +7,8 @@ import insurance from '../images/insurance.png'
 import electricity from '../images/ered.png'
 import Search from './functionalities/Search'
 import { useHistory } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { BsCheckSquare } from 'react-icons/bs'
 
 
 const Center = () => {
@@ -17,6 +19,7 @@ const Center = () => {
         history.push = "/savings";
         alert("clicked")
     }
+    const latestPayments = useSelector((state) => state.payment)
     return (
         <div className="center">
             <Search />
@@ -37,10 +40,15 @@ const Center = () => {
                     </div>
                 </div>
             </div>
-            < Lacards imgSrc={insurance} laone="Insurance" laonep="Property Coverage" latwo="LTC Wallet" latwop="Personal Account" lathree="7 Jun, 21" lathreep="Last Payment" lafour="-10.24LTC" lafourp="Balance" />
+            {latestPayments.map((latest) => {
+                return (
+                    <Lacards imgSrc={<BsCheckSquare />} laone={latest.narration} laonep="Property Coverage" latwo={`${latest.coin} Wallet`} latwop="Personal Account" lathree={latest.date} lathreep="Last Payment" lafour={`-${latest.amount}${latest.coin}`} lafourp="Balance" />
+                )
+            })}
 
-            < Lacards
+            <Lacards
                 imgSrc={electricity} imgBg="#f5cdcd" laone="Electricity" laonep="Utility Payment" latwo="ETH Wallet" latwop="Personal Account" lathree="9 Jun, 21" lathreep="Last Payment" lafour="-3.24ETH" lafourp="Balance" />
+
         </div>
     )
 }

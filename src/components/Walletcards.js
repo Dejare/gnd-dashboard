@@ -4,7 +4,7 @@ import "../components/Payment.scss";
 //
 const Walletcards = ({ coinname, amount, increase, fullcoinname, sideImg }) => {
     return (
-        <div className="walletCard flex flex-column justify-between w-4/4 m-auto p-3 bg-gray-300 m-4 p-8 rounded-md">
+        <div className="walletCard flex flex-column justify-between w-4/4 m-auto  bg-gray-300 p-8 rounded-md">
             <div className="sideImg m-auto mx-0">
                 <img src={sideImg} alt="coinImage" width="30px" />
             </div>

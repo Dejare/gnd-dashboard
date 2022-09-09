@@ -2,18 +2,20 @@ import React, { useState, useEffect, useRef } from "react";
 import "./function.scss";
 import "../../style/_base.scss";
 import Sent from "./Sent";
-// import { BallTriangle } from "react-loader-spinner";
+import { useDispatch } from "react-redux";
+import { makePayment } from "../../redux/slice/paymentSlice";
 import gsap from "gsap";
-// import pay from "../../db/pay.json";
 export const Newtransfer = (props) => {
     const [Amount, setAmount] = useState("");
     const [Wallet, setWallet] = useState("");
     const [Coin, setCoin] = useState("BTC");
     const [CoinSent, setCoinSent] = useState(false);
+    const [Narration, setNarration] = useState("")
     const container = useRef();
-
+    const dispatch = useDispatch()
     // HANDLING FORM SsUBMIT
     const handleSubmit = (e) => {
+
         e.preventDefault();
         container.current.style.display = "none"
         const data = {
@@ -21,10 +23,12 @@ export const Newtransfer = (props) => {
             amount: Amount,
             wallet: Wallet,
             coin: Coin,
-            bool: true
+            bool: true,
+            narration: Narration
         };
 
-        props.onAddData(data);
+        dispatch(makePayment(data))
+        // props.onAddData(data);
 
         setCoinSent(true);
     };
@@ -81,6 +85,15 @@ export const Newtransfer = (props) => {
                         onChange={(e) => setWallet(e.target.value)}
                     />
 
+                    <input
+                        required
+                        type="text"
+                        name="wallet"
+                        className="input"
+                        placeholder="Narration/What for?"
+                        value={Narration}
+                        onChange={(e) => setNarration(e.target.value)}
+                    />
                     <select
                         name="coin"
                         id="coin"

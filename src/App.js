@@ -7,23 +7,27 @@ import Leftside from "./components/Leftside";
 import Saving from "./components/savings/Saving";
 import Error from "./Error";
 import Card from "./components/cards/Card";
+import { Counter } from "./components/COunter";
 
 function App() {
     return (
         <Router>
-         {/* <Home/> */}
+            {/* <Home/> */}
             <Switch>
-            <Route exact path="/">
-                    <Home/>
+                <Route exact path="/">
+                    <Home />
                 </Route>
                 <Route path="/savings">
-                    <Saving/>
+                    <Saving />
                 </Route>
                 <Route path="/cards" exact>
-                    <Card/>
+                    <Card />
+                </Route>
+                <Route exact path="/testt">
+                    <Counter />
                 </Route>
                 <Route path="*">
-                    <   Error/>
+                    <   Error />
                 </Route>
             </Switch>
         </Router>
