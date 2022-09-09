@@ -43,10 +43,10 @@ const Center = () => {
 
 
             <Lacards
-                imgSrc={electricity} imgBg="#f5cdcd" laone="Electricity" laonep="Utility Payment" latwo="ETH Wallet" latwop="Personal Account" lathree="29 Aug, 22" lathreep="Last Payment" lafour="-3.24ETH" lafourp="Balance" />
+                imgSrc={<BsCheckSquare />} imgBg="#f5cdcd" laone="Electricity" laonep="Utility Payment" latwo="ETH Wallet" latwop="Personal Account" lathree="29 Aug, 22" lathreep="Last Payment" lafour="-3.24ETH" lafourp="Balance" />
 
             <Lacards
-                imgSrc={insurance} imgBg="#f5cdcd" laone="Insurance" laonep="Utility Payment" latwo="BTC Wallet" latwop="Personal Account" lathree="9 Jun, 22" lathreep="Last Payment" lafour="-0.24BTC" lafourp="Balance" />
+                imgSrc={<BsCheckSquare />} imgBg="#f5cdcd" laone="Insurance" laonep="Utility Payment" latwo="BTC Wallet" latwop="Personal Account" lathree="9 Jun, 22" lathreep="Last Payment" lafour="-0.24BTC" lafourp="Balance" />
 
             {latestPayments.map((latest) => {
                 return (
