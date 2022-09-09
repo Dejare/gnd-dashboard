@@ -40,14 +40,19 @@ const Center = () => {
                     </div>
                 </div>
             </div>
-            {latestPayments.map((latest) => {
-                return (
-                    <Lacards imgSrc={<BsCheckSquare />} laone={latest.narration} laonep="Property Coverage" latwo={`${latest.coin} Wallet`} latwop="Personal Account" lathree={latest.date} lathreep="Last Payment" lafour={`-${latest.amount}${latest.coin}`} lafourp="Balance" />
-                )
-            })}
+
 
             <Lacards
-                imgSrc={electricity} imgBg="#f5cdcd" laone="Electricity" laonep="Utility Payment" latwo="ETH Wallet" latwop="Personal Account" lathree="9 Jun, 21" lathreep="Last Payment" lafour="-3.24ETH" lafourp="Balance" />
+                imgSrc={electricity} imgBg="#f5cdcd" laone="Electricity" laonep="Utility Payment" latwo="ETH Wallet" latwop="Personal Account" lathree="29 Aug, 22" lathreep="Last Payment" lafour="-3.24ETH" lafourp="Balance" />
+
+            <Lacards
+                imgSrc={insurance} imgBg="#f5cdcd" laone="Insurance" laonep="Utility Payment" latwo="BTC Wallet" latwop="Personal Account" lathree="9 Jun, 22" lathreep="Last Payment" lafour="-0.24BTC" lafourp="Balance" />
+
+            {latestPayments.map((latest) => {
+                return (
+                    <Lacards laone={latest.narration} laonep="Property Coverage" latwo={`${latest.coin} Wallet`} latwop="Personal Account" lathree={latest.date} lathreep="Last Payment" lafour={`-${latest.amount}${latest.coin}`} lafourp="Balance" />
+                )
+            })}
 
         </div>
     )

@@ -1,10 +1,11 @@
 import React from 'react'
+import { BsCheckSquare } from 'react-icons/bs'
 import '../../App.scss'
-const Lacards = ({ imgSrc, laone, laonep, latwo, latwop, lathree, lathreep, lafour, lafourp, imgBg }) => {
+const Lacards = ({ laone, laonep, latwo, latwop, lathree, lathreep, lafour, lafourp, imgBg }) => {
     return (
         <div className="lacards">
             <div className="laImg" style={{ backgroundColor: `${imgBg}` }}>
-                <img src={imgSrc} alt="check" />
+                <img src={<BsCheckSquare />} alt="check" />
             </div>
             <div className="la-one">
                 <h4 >{laone}</h4>

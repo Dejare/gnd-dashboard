@@ -2,8 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState = [
-    { id: 1, amount: "40", coin: "ETH" },
-    { id: 2, amount: "2", coin: "BTC" },
 
 ]
 
